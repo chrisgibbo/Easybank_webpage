@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+:root {
+  /* primary */
+  --darkBlue: hsl(233, 26%, 24%);
+  --limeGreen: hsl(136, 65%, 51%);
+  /* #31d35c = Limegreen */
+  --brightCyan: hsl(192, 70%, 51%);
+  /* #2bb7da brightCyan */
+
+  /* neutral */
+  --grayishBlue: hsl(233, 8%, 62%);
+  --lightGrayishBlue: hsl(220, 16%, 96%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  font-family: "Public Sans";
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.greyText {
+  color: var(--grayishBlue);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.whitewhite {
+  background: var(--veryLightGray);
 }
 
-.App-link {
-  color: #61dafb;
+.lightGreyText {
+  color: var(--grayishBlue);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lightGrey {
+  background: var(--lightGrayishBlue);
+}
+
+.darkBlueBackground {
+  background: var(--darkBlue);
+}
+
+.grad {
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+}
+
+.backgroundImage {
+  background-image: url(./images/bg-intro-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top -150%;
+  background-size: 125%;
 }
